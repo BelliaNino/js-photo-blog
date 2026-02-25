@@ -2,22 +2,9 @@
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/'
 const rowEl = document.querySelector('.row')
 
-console.log(endpoint, rowEl);
-
-//creare una variabile vuota per inserire il markup alla fine
-let summerPics = ``
-
-//utilizzo fetch per estrapolare dati dell'api
-fetch(endpoint)
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
-
-        //destrutturo l'array ottenuta 
-        data.forEach(element => {
-            console.log(element);
-            const { title, date, url } = element
-            const markup = `<div class="col-12 col-md-6 col-lg-4">
+//funzione per il markup
+function markup(title, date, url) {
+    return `<div class="col-12 col-md-6 col-lg-4">
                     <div class="card rounded-0 mx-auto" style="width: 18rem;">
                         <img src="./pthoto_blog_assets_day1/img/pin.svg" class="pin" alt="">
                         <div class="card-heder rounded-0 m-3 mb-0">
@@ -28,14 +15,18 @@ fetch(endpoint)
                             <p class="card-text fs-3">${title}</p>
                         </div>
                     </div>
-                </div> `
+                </div>`
+}
 
-            console.log(markup);
+//funzione per destrutturare l'array una volta analizzata l'API e stampare in pagina
+function renderCards() {
+    fetch(endpoint)
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(element => {
+                rowEl.innerHTML += markup(element.title, element.date, element.url)
+            })
+        })
+}
 
-            //unisco il markup alla variabile vuota
-            summerPics += markup
-            rowEl.innerHTML = summerPics
-        });
-
-    })
-
+renderCards()
