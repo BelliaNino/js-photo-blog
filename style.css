@@ -5,11 +5,20 @@
 }
 
 header {
-  background-image: url("./pthoto_blog_assets_day1/img/wall.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 150px;
+    background-image: url("./pthoto_blog_assets_day1/img/wall.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: Edu Tas Beginner;
+        font-weight: bold;
+        font-size: 400%;
+    }
 }
 
 main {
