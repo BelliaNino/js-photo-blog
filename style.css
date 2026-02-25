@@ -26,4 +26,26 @@ main {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+
+    
 }
+
+.card-text {
+    font-family: Edu Tas Beginner;
+}
+
+.card-img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .card {
+        position: relative;
+    }
+
+    .pin {
+        position: absolute;
+        width: 12%;
+        top: -4%;
+        left: 43%
+    }
