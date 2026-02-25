@@ -30,8 +30,13 @@ main {
     
 }
 
+span {
+    font-family: Sometype Mono;
+}
+
 .card-text {
     font-family: Edu Tas Beginner;
+    font-weight: 900;
 }
 
 .card-img {
