@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*img di bg all'header e stilizzare il titolo*/
 header {
     background-image: url("./pthoto_blog_assets_day1/img/wall.png");
     background-size: cover;
@@ -21,6 +22,7 @@ header {
     }
 }
 
+/*aggiungere img di bg al main*/
 main {
     background-image: url("./pthoto_blog_assets_day1/img/cork.png");
     background-size: cover;
@@ -30,15 +32,18 @@ main {
     
 }
 
+/*stilizzare la data*/
 span {
     font-family: Sometype Mono;
 }
 
+/*stilizzare la disascalia*/
 .card-text {
     font-family: Edu Tas Beginner;
     font-weight: 900;
 }
 
+/*stilizzare img della card e posizionare la pin*/
 .card-img {
         width: 600px;
         height: 600px;
