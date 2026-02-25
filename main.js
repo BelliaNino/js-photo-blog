@@ -18,7 +18,7 @@ function markup(title, date, url) {
                 </div>`
 }
 
-//funzione per destrutturare l'array una volta analizzata l'API e stampare in pagina
+//funzione per destrutturare l'array, una volta analizzata l'API, e stampare in pagina
 function renderCards() {
     fetch(endpoint)
         .then(res => res.json())

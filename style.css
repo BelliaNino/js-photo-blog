@@ -9,7 +9,7 @@ header {
     background-image: url("./pthoto_blog_assets_day1/img/wall.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -18,8 +18,19 @@ header {
     h1 {
         font-family: Edu Tas Beginner;
         font-weight: bold;
+        font-size: 230%;}
+
+    @media (min-width: 667px){
+    h1 {
+        font-size: 300%;
+    }}
+
+    @media (min-width: 992px){
+    h1 {
         font-size: 400%;
-    }
+    }}
+
+
 }
 
 /*aggiungere img di bg al main*/
