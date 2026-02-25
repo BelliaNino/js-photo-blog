@@ -3,11 +3,14 @@ const rowEl = document.querySelector('.row')
 
 console.log(endpoint, rowEl);
 
+let summerPics = ``
 
 fetch (endpoint)
 .then(res => res.json())
 .then(data => {
     console.log(data);
+
+   
 
     data.forEach(element => {
         console.log(element);
@@ -24,7 +27,12 @@ fetch (endpoint)
                         </div>
                     </div>
                 </div> `
-        
+
+                console.log(markup);
+
+                summerPics += markup
+                rowEl.innerHTML = summerPics
     });
     
 })
+
