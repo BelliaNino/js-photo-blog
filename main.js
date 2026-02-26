@@ -4,7 +4,7 @@ const rowEl = document.querySelector('.row')
 const btnEl = document.getElementById('btn')
 
 const overlayEl = document.getElementById('overlay');
-const overlayImg = overlay.querySelector('img');
+const overlayImg = document.querySelector('img');
 
 //funzione per il markup
 function markup(title, date, url) {
@@ -30,8 +30,21 @@ function renderCards() {
             data.forEach(element => {
                 rowEl.innerHTML += markup(element.title, element.date, element.url)
             })
+        
+            //creo una variabile dentro then 
+        const images = document.querySelectorAll('.card-img-top');
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    overlayEl.style.display = 'flex'; 
+                });
+            });
         })
 }
+
+//al click del bottone ovarly va in display none 
+btnEl.addEventListener('click', () => {
+    overlayEl.style.display = 'none';
+});
 
 
 renderCards()
