@@ -70,3 +70,34 @@ span {
         top: -4%;
         left: 43%
     }}
+
+/*overlay*/
+#overlay {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+
+    img {
+        width: 600px;
+        max-height: 600px;
+    }
+
+    button {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 2rem;
+    }
+}
