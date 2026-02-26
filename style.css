@@ -55,9 +55,9 @@ span {
 }
 
 /*stilizzare img della card e posizionare la pin*/
-.card-img {
-        width: 600px;
-        height: 600px;
+.card{
+    img {
+        cursor: pointer;
     }
 
     .card {
@@ -69,4 +69,4 @@ span {
         width: 12%;
         top: -4%;
         left: 43%
-    }
+    }}
