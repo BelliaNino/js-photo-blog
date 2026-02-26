@@ -56,6 +56,8 @@ span {
 
 /*stilizzare img della card e posizionare la pin*/
 .card{
+    transition: transform 0.7s ease;
+
     img {
         cursor: pointer;
     }
@@ -70,6 +72,12 @@ span {
         top: -4%;
         left: 43%
     }}
+
+    /*bonus hover*/
+    .card:hover {
+        box-shadow: 10px 10px 5px rgba(44, 44, 44, 0.68); 
+        transform: rotate(10deg); scale:(1.01);       
+    }
 
 /*overlay*/
 #overlay {
