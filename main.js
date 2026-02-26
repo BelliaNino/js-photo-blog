@@ -1,6 +1,10 @@
 //aggiungere i nod
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/'
 const rowEl = document.querySelector('.row')
+const btnEl = document.getElementById('btn')
+
+const overlayEl = document.getElementById('overlay');
+const overlayImg = overlay.querySelector('img');
 
 //funzione per il markup
 function markup(title, date, url) {
@@ -29,4 +33,6 @@ function renderCards() {
         })
 }
 
+
 renderCards()
+
