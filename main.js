@@ -32,12 +32,13 @@ function renderCards() {
             })
         
             //creo una variabile dentro then 
-        const images = document.querySelectorAll('.card-img-top');
+            const images = document.querySelectorAll('.card-img-top')
             images.forEach(img => {
                 img.addEventListener('click', () => {
-                    overlayEl.style.display = 'flex'; 
-                });
-            });
+                    overlayEl.style.display = 'flex'
+                    overlayImg.src = img.src;
+                })
+            })
         })
 }
 
